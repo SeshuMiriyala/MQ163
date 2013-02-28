@@ -1,9 +1,4 @@
-﻿using System;
-using System.Web;
-using System.Web.Services;
-using System.Web.Services.Protocols;
-using System.ComponentModel;
-
+﻿
 namespace MQ163.External.Facebook
 {
     public interface IFacebookProfile
@@ -31,7 +26,13 @@ namespace MQ163.External.Facebook
             get;
             set;
         }
-    
+
+        string UserName
+        {
+            get;
+            set;
+        }
+
         void GetPublicDetails();
     }
 }

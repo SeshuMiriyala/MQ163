@@ -121,6 +121,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\External\FacebookAgent.cs" />
+    <Compile Include="Application\External\FacebookPage.cs" />
+    <Compile Include="Application\External\FacebookPost.cs" />
+    <Compile Include="Application\External\FacebookPostData.cs" />
+    <Compile Include="Application\External\FacebookProfile.cs" />
+    <Compile Include="Application\External\IFacebookPostData.cs" />
+    <Compile Include="Application\Facade\Facebook.Facade.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -224,7 +231,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Application\DataAccess\" />
-    <Folder Include="Application\Facade\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
@@ -247,7 +253,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>5110</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:1222/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
