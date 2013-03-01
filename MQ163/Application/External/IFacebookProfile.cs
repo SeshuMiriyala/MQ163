@@ -32,7 +32,5 @@ namespace MQ163.External.Facebook
             get;
             set;
         }
-
-        void GetPublicDetails();
     }
 }

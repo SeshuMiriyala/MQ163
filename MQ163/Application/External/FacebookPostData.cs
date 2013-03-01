@@ -10,15 +10,15 @@ namespace MQ163.Application.External
         #region IFacebookPostData Members
 
         public string Message { get; set; }
-        public object Tags { get; set; }
+        public string TaggedUserEmail { get; set; }
         public string PictureUrl { get; set; }
         public string AccessToken { get; set; }
 
-        public dynamic GetPostObject()
+        public dynamic GetPostObject(string userID)
         {
             dynamic parameters = new ExpandoObject();
             parameters.message = Message;
-            parameters.tags = Tags;
+            parameters.tags = new[] { new { tag_uid = userID, x = 1, y = 1 } }; ;
             parameters.url = PictureUrl;
             parameters.source = new FacebookMediaObject
                 {

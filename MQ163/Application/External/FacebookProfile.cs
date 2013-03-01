@@ -1,5 +1,4 @@
-﻿using System;
-using MQ163.External.Facebook;
+﻿using MQ163.External.Facebook;
 
 namespace MQ163.Application.External
 {
@@ -40,11 +39,6 @@ namespace MQ163.Application.External
         {
             get;
             set;
-        }
-
-        public void GetPublicDetails()
-        {
-            throw new NotImplementedException();
         }
 
         #endregion
